@@ -20,8 +20,9 @@ public class Ej_1 {
 	            System.out.println("Cociente (a / b) = " + cociente);
 	            System.out.println("Resto (a % b) = " + resto);
 	        } else {
-	            System.out.println("Error: sepuede dividir entre cero.");
+	            System.out.println("Error: No sepuede dividir entre cero.");
 	        }
 	    }
 	}
+
 
