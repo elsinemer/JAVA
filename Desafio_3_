@@ -1,8 +1,6 @@
-import java.util.Random;
-
-public class SecuenciaAzar {
+public class Main {
     public static void main(String[] args) {
-        Random rand = new Random();
+        java.util.Random rand = new java.util.Random();
         int sumaImpares = 0;
 
         System.out.println("Generando enteros al azar entre 0 y 10 (inclusive)...");
