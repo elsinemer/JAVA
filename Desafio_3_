@@ -1,0 +1,24 @@
+import java.util.Random;
+
+public class SecuenciaAzar {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int sumaImpares = 0;
+
+        System.out.println("Generando enteros al azar entre 0 y 10 (inclusive)...");
+        while (sumaImpares <= 25) {
+            int n = rand.nextInt(11); // 0..10
+            boolean esPar = (n % 2 == 0);
+
+            if (esPar) {
+                System.out.println(n + " -> es par");
+            } else {
+                System.out.println(n + " -> NO es par (impar)");
+                sumaImpares += n;
+            }
+        }
+
+        System.out.println("-----");
+        System.out.println("Suma de impares superó 25. Suma final = " + sumaImpares);
+    }
+}
